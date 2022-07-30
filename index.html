@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="head">Calculate your mark</h1>
+        <form id="form">
+            <label for="math" class="subject">Engineering Mathematics<input id="math" class="mark" required type="number"></label>
+
+            <label for="phy" class="subject">Engineering Physics<input id="phy" class="mark" required type="number"></label>
+
+            <label for="eee" class="subject">Electronics<input type="number" id="eee" class="mark" required></label>
+
+            <label for="eeeL" class="subject">Electronics Lab<input type="number" class="mark" required id="eeeL"></label>
+
+            <label for="sp" class="subject">Structured programming<input type="number" class="mark" required id="sp"></label>
+
+            <label for="spl" class="subject">Structured programming Lab<input type="number" class="mark" required id="spl"></label>
+
+            <label for="des" class="subject">Developing English<input type="number" class="mark" required id="des"></label>
+
+            <label for="dm" class="subject">Discreate Mathematics<input type="number" class="mark" required id="dm"></label>
+
+            <input type="submit" value="Submit" id="btn">
+        </form>
+        <div class="result">
+            <h2>Total mark : <span id="totalMark"></span></h2>
+            <h2>Grade Point : <span id="gradePoint"></span></h2>
+            <h2>Grade : <span id="grade"></span></h2>
+            <h2>Total pass : <span id="totalPass"></span></h2>
+            <h2>Total fail : <span id="totalFail"></span></h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
